@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E616966F1E3CE6AA0039A4B7"
-               BuildableName = "Forecast App.app"
-               BlueprintName = "Forecast App"
-               ReferencedContainer = "container:Forecast App.xcodeproj">
+               BlueprintIdentifier = "7B366C7D2955A7F0C70126D9D966608F"
+               BuildableName = "Pods_Forecast_App.framework"
+               BlueprintName = "Pods-Forecast App"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E616966F1E3CE6AA0039A4B7"
-            BuildableName = "Forecast App.app"
-            BlueprintName = "Forecast App"
-            ReferencedContainer = "container:Forecast App.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E616966F1E3CE6AA0039A4B7"
-            BuildableName = "Forecast App.app"
-            BlueprintName = "Forecast App"
-            ReferencedContainer = "container:Forecast App.xcodeproj">
+            BlueprintIdentifier = "7B366C7D2955A7F0C70126D9D966608F"
+            BuildableName = "Pods_Forecast_App.framework"
+            BlueprintName = "Pods-Forecast App"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E616966F1E3CE6AA0039A4B7"
-            BuildableName = "Forecast App.app"
-            BlueprintName = "Forecast App"
-            ReferencedContainer = "container:Forecast App.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
