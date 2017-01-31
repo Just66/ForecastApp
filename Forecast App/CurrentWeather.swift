@@ -10,10 +10,10 @@ import UIKit
 import Alamofire
 
 class CurrentWeather {
-    private var _cityName: String!
-    private var _date: String!
-    private var _weatherType: String!
-    private var _currentTemp: Double!
+    var _cityName: String!
+    var _date: String!
+    var _weatherType: String!
+    var _currentTemp: Double!
     
     var cityName: String {
         if _cityName == nil {
@@ -33,7 +33,7 @@ class CurrentWeather {
             _date = ""
         }
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .short
+        dateFormatter.dateStyle = .long
         let currentDate = dateFormatter.string(from: Date())
         self._date = "Today, \(currentDate)"
         
@@ -44,5 +44,36 @@ class CurrentWeather {
             _currentTemp = 0.0
         }
         return _currentTemp
+    }
+    
+    func downloadWeatherDetails(compleated: DownloadComplete) {
+        let currentWeather = URL(string: CURRENT_WEATHER_URL)
+        Alamofire.request(currentWeather!).responseJSON { response in
+            
+            let result = response.result
+            if let dict = result.value as? Dictionary<String, Any> {
+                if let name = dict["name"] as? String {
+                    self._cityName = name
+                    print(self._cityName)
+                }
+                
+                if let weather = dict["weather"] as? [Dictionary<String, Any>] {
+                    if let main = weather[0]["main"] as? String {
+                        self._weatherType = main.capitalized
+                        print(self.weatherType)
+                    }
+                }
+                
+                if let main = dict["main"] as? Dictionary<String, Any> {
+                    if let currentTemperature = main["temp"] as? Double {
+                        let kelvinToCelciusDivision = currentTemperature - 273.15
+                        let kelvinToCelcius = Double(round(10 * kelvinToCelciusDivision/10))
+                        self._currentTemp = kelvinToCelcius
+                        print(self.currentTemp)
+                    }
+                }
+            }
+        }
+        compleated()
     }
 }

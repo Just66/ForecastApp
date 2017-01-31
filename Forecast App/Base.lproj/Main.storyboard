@@ -94,7 +94,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rQD-bb-CRv" id="l9E-6l-ABt">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mEF-T9-faL">
@@ -158,8 +158,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currentTemp" destination="F6S-6Q-B8i" id="TvC-ce-Lnq"/>
                         <outlet property="date" destination="Lkj-hS-B3j" id="OoX-pz-q19"/>
-                        <outlet property="image" destination="F6S-6Q-B8i" id="2lX-j1-jLe"/>
                         <outlet property="location" destination="bfo-0k-IZC" id="RZY-xB-P36"/>
                         <outlet property="tableView" destination="MJc-Lr-297" id="gpw-Aa-HTW"/>
                         <outlet property="thumgImage" destination="GL6-1F-HSE" id="3a6-FS-ZTQ"/>
