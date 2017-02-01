@@ -15,6 +15,7 @@
 		E616967E1E3CE6AA0039A4B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E616967D1E3CE6AA0039A4B7 /* Assets.xcassets */; };
 		E61696811E3CE6AA0039A4B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E616967F1E3CE6AA0039A4B7 /* LaunchScreen.storyboard */; };
 		E6282A261E3F96910065BB36 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6282A251E3F96910065BB36 /* CurrentWeather.swift */; };
+		E62BAD9E1E423F8900706EA0 /* ForescastForFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62BAD9D1E423F8900706EA0 /* ForescastForFuture.swift */; };
 		E64FEF331E3E67F800B4CE97 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64FEF321E3E67F800B4CE97 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		E61696801E3CE6AA0039A4B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E61696821E3CE6AA0039A4B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6282A251E3F96910065BB36 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		E62BAD9D1E423F8900706EA0 /* ForescastForFuture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForescastForFuture.swift; sourceTree = "<group>"; };
 		E64FEF321E3E67F800B4CE97 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				E61696771E3CE6AA0039A4B7 /* Main.storyboard */,
 				E64FEF321E3E67F800B4CE97 /* Constants.swift */,
 				E6282A251E3F96910065BB36 /* CurrentWeather.swift */,
+				E62BAD9D1E423F8900706EA0 /* ForescastForFuture.swift */,
 				E616967D1E3CE6AA0039A4B7 /* Assets.xcassets */,
 				E616967F1E3CE6AA0039A4B7 /* LaunchScreen.storyboard */,
 				E61696821E3CE6AA0039A4B7 /* Info.plist */,
@@ -248,6 +251,7 @@
 				E61696761E3CE6AA0039A4B7 /* WeatherVC.swift in Sources */,
 				E6282A261E3F96910065BB36 /* CurrentWeather.swift in Sources */,
 				E64FEF331E3E67F800B4CE97 /* Constants.swift in Sources */,
+				E62BAD9E1E423F8900706EA0 /* ForescastForFuture.swift in Sources */,
 				E616967C1E3CE6AA0039A4B7 /* Forecast_App.xcdatamodeld in Sources */,
 				E61696741E3CE6AA0039A4B7 /* AppDelegate.swift in Sources */,
 			);

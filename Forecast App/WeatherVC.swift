@@ -17,11 +17,13 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
 
     var currentWeather: CurrentWeather!
+    var forecast: Forecast!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         currentWeather = CurrentWeather()
+        forecast = Forecast()
         currentWeather.downloadWeatherDetails {
             self.updateWeatherUI()
         }
@@ -29,6 +31,11 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.dataSource = self
         
            }
+    
+    func downloadForecastData(compleated: DownloadComplete) {
+        let forecastURL = 
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
